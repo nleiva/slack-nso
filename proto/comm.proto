@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package comm;
+
+message id {}
+
+message Command {
+  string cmd = 1;
+  string arg1 = 2;
+  string arg2 = 3;
+}
+
+// gRPC Services
+service CommSvc {
+	rpc GetCmd (id) returns (stream Command);
+}
