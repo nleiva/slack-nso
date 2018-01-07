@@ -6,25 +6,25 @@ Small PoC to control NSO via Slack
 
 ## Compiling protocol buffers
 
-´´´shell
+```bash
 protoc --go_out=plugins=grpc:. comm.proto
-´´´
+```
 
 ## Generating SSL Certificates
 
 - Local testing
 
-´´´shell
+```bash
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes -subj '/CN=localhost'
-´´´
+```
 
 - Online testing
 
 CN needs to be replace by your gRPC Server
 
-´´´shell
+```bash
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes -subj '/CN=grpc.nleiva.com'
-´´´
+```
 
 ## Generating binaries for Client and Server
 
