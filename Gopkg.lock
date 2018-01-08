@@ -10,7 +10,7 @@
 [[projects]]
   name = "github.com/nlopes/slack"
   packages = ["."]
-  revision = "c86337c0ef2486a15edd804355d9c73d2f2caed1"
+  revision = "ccf0351050c69b08f9c48f3e876f4cd5564463e8"
   version = "v0.1.0"
 
 [[projects]]
