@@ -1,12 +1,16 @@
 # Slack-NSO
 
-Small PoC to control NSO via Slack
+Small PoC to control NSO via Slack.
 
 ![slack-nso](slack-nso.png)
 
 ## Example
 
+**Slack**
+
 ![slack](slack.png)
+
+**Router**
 
 ```bash
 RP/0/RP0/CPU0:mrstn-5501-1.cisco.com# sh run router static 
@@ -82,17 +86,17 @@ Just in case...
 [docker build](https://docs.docker.com/edge/engine/reference/commandline/build/#usage)
 
 ```
---tag , -t		        Name and optionally a tag in the ‘name:tag’ format
---file , -f		        Name of the Dockerfile (Default is ‘PATH/Dockerfile’)
+--tag , -t    Name and optionally a tag in the ‘name:tag’ format
+--file , -f   Name of the Dockerfile (Default is ‘PATH/Dockerfile’)
 ```
 
 [docker run](https://docs.docker.com/edge/engine/reference/commandline/container_run/#usage)
 
 ```
---tty , -t		        Allocate a pseudo-TTY
---rm		            Automatically remove the container when it exits
---name		            Assign a name to the container
---env-file		        Read in a file of environment variables
+--tty , -t    Allocate a pseudo-TTY
+--rm          Automatically remove the container when it exits
+--name        Assign a name to the container
+--env-file    Read in a file of environment variables
 ```
 
 ### Example
